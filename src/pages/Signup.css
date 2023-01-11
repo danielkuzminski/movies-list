@@ -1,0 +1,32 @@
+.signup-form {
+  width: 360px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.signup-form h2 {
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.signup-form label {
+  display: block;
+  margin: 30px auto;
+}
+
+.signup-form span {
+  display: block;
+  border-bottom: 6px;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 8px 5px;
+  margin-bottom: 6px;
+}
+
+.btn-signup {
+  width: 100%;
+  padding: 5px;
+  margin: 5px auto;
+}
