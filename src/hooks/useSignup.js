@@ -6,16 +6,14 @@ export const useSignup = () => {
   const [error, setError] = useState(null)
   const [isPending, setIsPending] = useState(false)
 
-  const signup = async (email, password, displayName) => {
+  const signup = async (email, password) => {
     setError(null)
     setIsPending(true)
 
     try {
       const res = await createUserWithEmailAndPassword(auth, email, password)
       setIsPending(false)
-      console.log(res.user)
-
-      await updateProfile(res.user, displayName)
+      // console.log(res.user)
     }
     catch (err){
       console.log(err.message)
