@@ -15,9 +15,9 @@ export default function Navbar() {
     <nav className='navbar'>
       <ul>
         <li className='title'>Filmy</li>
-        <li><Link to='/login'>zaloguj</Link></li>
-        <li><Link to='/signup'>zarejestruj</Link></li>
-        <li onClick={logout} ><Link>wyloguj</Link></li>
+        <li className='nav-action'><Link to='/login'>zaloguj</Link></li>
+        <li className='nav-action'><Link to='/signup'>zarejestruj</Link></li>
+        <li className='nav-action clickable' onClick={logout} >wyloguj</li>
       </ul>
     </nav>
   )

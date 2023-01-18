@@ -12,12 +12,11 @@ export default function Login() {
 
   const {error, isPending, login} = useLogin()
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     login(email, password)
-    
-    console.log(email, password);
   }
 
   return (
@@ -46,7 +45,7 @@ export default function Login() {
          />
       </label>
       {!isPending && <button className='btn-submit'>Wyślij</button>}
-      {isPending && <button className='btn-submit' disabled >Wyślij</button>}
+      {isPending && <button className='btn-submit' disabled >Wysyłam</button>}
     </form>
   )
 }

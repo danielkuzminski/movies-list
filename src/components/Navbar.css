@@ -23,8 +23,13 @@
   font-size: 1.2rem;
 }
 
-.navbar button, .navbar a {
+.navbar .nav-action {
   margin-left: 16px;
+}
+
+.clickable {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .navbar a {
