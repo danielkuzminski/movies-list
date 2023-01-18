@@ -34,7 +34,7 @@ export default function Signup() {
       className='signup-form'
       onSubmit={handleSubmit}
     >
-      {error && <p>{error}</p>}
+      {error && <p className='error-msg'>{error}</p>}
       <h2>Zarejestruj się</h2>
       <label>
         <span>email:</span>
@@ -63,7 +63,8 @@ export default function Signup() {
           required
         />
       </label>
-      <button className='btn-submit'>Wyślij</button>
+      {!isPending && <button className='btn-submit'>Wyślij</button>}
+      {isPending && <button className='btn-submit' disabled >Wyślij</button>}
     </form>
   )
 }

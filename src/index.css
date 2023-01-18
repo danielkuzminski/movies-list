@@ -23,3 +23,10 @@ body {
 .btn-submit:active {
   background: rgba(12, 12, 158, 0.8);
 }
+
+.error-msg {
+  width: 360px;
+  padding: 10px;
+  border: 1px solid red;
+  background-color: rgba(244, 89, 89, .5);
+}
