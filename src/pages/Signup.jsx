@@ -64,7 +64,7 @@ export default function Signup() {
         />
       </label>
       {!isPending && <button className='btn-submit'>Wyślij</button>}
-      {isPending && <button className='btn-submit' disabled >Wyślij</button>}
+      {isPending && <button className='btn-submit' disabled >Wysyłam</button>}
     </form>
   )
 }
