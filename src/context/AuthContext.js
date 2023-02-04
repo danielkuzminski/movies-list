@@ -1,29 +1,41 @@
-import { createContext, useReducer } from "react";
+import { createContext, useReducer, useEffect } from 'react';
+import { auth } from '../firebase/config';
+import { onAuthStateChanged } from 'firebase/auth';
 
-export const AuthContext = createContext()
+export const AuthContext = createContext();
 
 export const authReducer = (state, action) => {
-  switch (action.type){
+  switch (action.type) {
     case 'LOGIN':
-      return {...state, user: action.payload}
+      return { ...state, user: action.payload };
     case 'LOGOUT':
-      return {...state, user: null}
+      return { ...state, user: null };
+    case 'AUTH_IS_READY':
+      return { ...state, user: action.payload, authIsReady: true }
     default:
-      return state
+      return state;
   }
+};
 
-}
+export const AuthContextProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(authReducer, {
+    user: null,
+    // to check if user is already logged in when we start the app
+    authIsReady: false,
+  });
 
-export const AuthContextProvider = ({children}) => {
-  const [state, dispatch] = useReducer( authReducer, {
-    user: null
-  })
+  useEffect(() => {
+    const unsub = onAuthStateChanged(auth,(user) => {
+      dispatch({type: 'AUTH_IS_READY', payload: user})
+      unsub()
+    })
+  }, []);
 
   console.log('auth context state:', state);
 
   return (
-    <AuthContext.Provider value={{...state, dispatch}}>
+    <AuthContext.Provider value={{ ...state, dispatch }}>
       {children}
     </AuthContext.Provider>
-  )
-}
+  );
+};
