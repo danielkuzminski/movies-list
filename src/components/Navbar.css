@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+
 .navbar {
   width: 100%;
   /* background: #effaf0; */
@@ -18,9 +21,9 @@
 
 .title {
   margin-right: auto;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 1.2rem;
+  font-family: 'Sigmar One', cursive;
+  letter-spacing: 10px;
+  font-size: 1.5rem;
 }
 
 .navbar .nav-action {

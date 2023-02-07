@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import './NotFound.css'
 
 // router
-import { Navigate, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export default function NotFound() {
   const navigate = useNavigate()
@@ -15,7 +15,7 @@ export default function NotFound() {
       navigate('/')
     }, 5000)
     return () => clearTimeout(timer)
-  }, [])
+  }, [navigate])
 
   return (
     <div className='not-found-container'>
