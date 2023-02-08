@@ -5,6 +5,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  background-color: #dfe9f2;
 }
 
 .btn-submit {
@@ -29,4 +30,9 @@ body {
   padding: 10px;
   border: 1px solid red;
   background-color: rgba(244, 89, 89, .5);
+}
+
+a {
+  color: #000;
+  text-decoration: none;
 }
