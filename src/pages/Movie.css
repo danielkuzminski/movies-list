@@ -1,0 +1,44 @@
+.movie-display-box {
+  width: 480px;
+  min-height: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  box-shadow: 0 0 10px 10px #ccc;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.movie-display-box-title {
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.movie-display-box img {
+  width: 450px;
+  box-shadow: 0 0 10px 2px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.description-box {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.iframe-box {
+  width: 450px;
+  aspect-ratio: 16/9;
+  margin: 20px auto;
+
+}

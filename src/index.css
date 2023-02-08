@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   background-color: #dfe9f2;
+  overflow-y: overlay;
 }
 
 .btn-submit {

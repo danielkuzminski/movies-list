@@ -4,7 +4,7 @@
 .navbar {
   width: 100%;
   /* background: #effaf0; */
-  padding: 20px 10px;
+  padding: 10px 0 0 0px;
   box-sizing: border-box;
 }
 
@@ -33,6 +33,7 @@
 .clickable {
   cursor: pointer;
   text-decoration: underline;
+  margin-right: 15px;
 }
 
 .navbar a {
