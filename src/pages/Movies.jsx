@@ -6,11 +6,14 @@ import './Movies.css'
 
 // router
 import { Link } from 'react-router-dom'
+import Navbar from '../components/Navbar'
 
 export default function Movies() {
   const {data: movies} = useCollection('movies')
 
   return (
+    <div>
+      <Navbar />
     <div className='movies-container'>
       {movies && movies.map((movie) => (
         <Link to={`/movies/${movie.id}`} className='movie-card' key={movie.id}>
@@ -19,6 +22,7 @@ export default function Movies() {
           {/* <img src={movie.cover} alt={movie.titlePl} /> */}
         </Link>
       ))}
+    </div>
     </div>
   )
 }

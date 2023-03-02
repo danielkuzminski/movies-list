@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       { authIsReady && (
         <BrowserRouter>
-          <Navbar />
+          {/* <Navbar /> */}
           <Routes>
             <Route path='/' element={user ? <Home /> : <Navigate to='/login' />} />
             <Route path='/movies' element={user ? <Movies /> : <Navigate to='/login'/>} />

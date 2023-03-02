@@ -3,7 +3,7 @@
 
 .navbar {
   width: 100%;
-  /* background: #effaf0; */
+  background: transparent;
   padding: 10px 0 0 0px;
   box-sizing: border-box;
 }
@@ -28,6 +28,7 @@
 
 .navbar .nav-action {
   margin: 0 16px 0 10px;
+  font-weight: 700;
 }
 
 .clickable {
@@ -35,24 +36,5 @@
 }
 
 .navbar a {
-  color: #333;
   text-decoration: none;
 }
-
-.add-btn {
-  padding: 3px;
-  border: 1px solid #000;
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  cursor: pointer;
-  background-color: rgba(0,0,0,.05);
-  text-transform: uppercase;
-}
-
-.add-btn:hover {
-  background-color: transparent;
-}
-

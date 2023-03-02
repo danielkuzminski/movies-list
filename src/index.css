@@ -9,7 +9,7 @@ body {
   overflow-y: overlay;
 }
 
-.btn-submit {
+/* .btn-submit {
   width: 50%;
   background: rgba(51, 51, 244, .8);
   border: none;
@@ -24,7 +24,7 @@ body {
 
 .btn-submit:active {
   background: rgba(12, 12, 158, 0.8);
-}
+} */
 
 .error-msg {
   width: 360px;

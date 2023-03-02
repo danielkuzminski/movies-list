@@ -2,7 +2,7 @@
 
 .movies-container {
   max-width: 50%;
-  min-width: 480px;
+  min-width: 0px;
   margin: 20px auto;
 }
 

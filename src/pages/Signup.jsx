@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 // hooks
 import { useSignup } from '../hooks/useSignup'
@@ -30,6 +31,7 @@ export default function Signup() {
   }
 
   return (
+    <section className='form-box'>
     <form 
       className='signup-form'
       onSubmit={handleSubmit}
@@ -37,8 +39,10 @@ export default function Signup() {
       {error && <p className='error-msg'>{error}</p>}
       <h2>Zarejestruj się</h2>
       <label>
-        <span>email:</span>
+        <ion-icon name="mail-outline"></ion-icon>
         <input 
+          placeholder='Email...'
+          className='signup-input'
           type="email"
           onChange={(e) => {setEmail(e.target.value)}}
           value={email}
@@ -46,8 +50,10 @@ export default function Signup() {
         />
       </label>
       <label>
-        <span>hasło:</span>
+        <ion-icon name="lock-closed-outline"></ion-icon>
         <input 
+          placeholder='Hasło...'
+          className='signup-input'
           type="password"
           onChange={(e) => {setPassword(e.target.value)}}
           value={password}
@@ -55,8 +61,10 @@ export default function Signup() {
          />
       </label>
       <label>
-        <span>nazwa użykownika:</span>
+        <ion-icon name="person-circle-outline"></ion-icon>
         <input 
+          placeholder='Nazwa użykownika...'
+          className='signup-input'
           type="text"
           onChange={(e) => {setDisplayName(e.target.value)}}
           value={displayName}
@@ -65,6 +73,8 @@ export default function Signup() {
       </label>
       {!isPending && <button className='btn-submit'>Wyślij</button>}
       {isPending && <button className='btn-submit' disabled >Wysyłam</button>}
+      <Link to='/login' className='signup-link extend'><ion-icon name="arrow-forward-outline"></ion-icon>Wpisz się</Link>
     </form>
+    </section>
   )
 }

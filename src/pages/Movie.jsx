@@ -9,6 +9,7 @@ import { useParams } from 'react-router-dom'
 // firebase
 import { doc, getDoc } from 'firebase/firestore'
 import { db } from '../firebase/config'
+import Navbar from '../components/Navbar'
 
 
 export default function Movie() {
@@ -31,6 +32,7 @@ export default function Movie() {
     <div>
     { movie && (
       <div>
+        <Navbar />
         <div className='movie-display-box'>
           <p className='movie-display-box-title'>"{movie.titlePl}"</p>
           {/* <img src={movie.cover} alt={movie.titleEng} /> */}
