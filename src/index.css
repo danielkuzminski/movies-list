@@ -37,3 +37,7 @@ a {
   color: #000;
   text-decoration: none;
 }
+
+ion-icon {
+  font-size: 30px;
+}

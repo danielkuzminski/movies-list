@@ -27,16 +27,32 @@
 }
 
 .navbar .nav-action {
-  margin-left: 16px;
+  margin: 0 16px 0 10px;
 }
 
 .clickable {
   cursor: pointer;
-  text-decoration: underline;
-  margin-right: 15px;
 }
 
 .navbar a {
   color: #333;
   text-decoration: none;
 }
+
+.add-btn {
+  padding: 3px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: rgba(0,0,0,.05);
+  text-transform: uppercase;
+}
+
+.add-btn:hover {
+  background-color: transparent;
+}
+
