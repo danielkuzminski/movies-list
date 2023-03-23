@@ -4,7 +4,7 @@ import { useState } from 'react'
 import './Navbar.css'
 
 //router
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 //hooks
 import { useLogout } from '../hooks/useLogout'
@@ -19,18 +19,20 @@ export default function Navbar() {
   return (
     <nav className='navbar'>
       <ul>
-        <li className='title'><Link to={'/'}>Filmy</Link></li>
-        {!user && (
-          <>
-            <li className='nav-action'><Link to='/login'>zaloguj</Link></li>
-            <li className='nav-action'><Link to='/signup'>zarejestruj</Link></li>
-          </>
-        )}
+        <span className='to-left'>Witaj, {user.displayName}. Co dzisiaj robimy?</span>
         {user && (
           <>
-            <li className='nav-action'>Witaj, {user.displayName} :)</li>
-            <li className='clickable' onClick={logout} ><ion-icon className='logout-icon' name="log-out-outline"></ion-icon></li>
+            <span className='nav-action clickable'>Szukamy</span>
+            <li className='nav-action clickable'><NavLink className='link-color' to='/add_movie'>Dodajemy</NavLink></li>
+            <li className='nav-action clickable'><NavLink className='link-color' to='/'>Filmy</NavLink></li>
+            <li className='clickable logout' onClick={logout} >wyloguj</li>
           </>
+          )}
+          {!user && (
+            <>
+              <li className='nav-action'><Link to='/login'>zaloguj</Link></li>
+              <li className='nav-action'><Link to='/signup'>zarejestruj</Link></li>
+            </>
           )}
       </ul>
     </nav>

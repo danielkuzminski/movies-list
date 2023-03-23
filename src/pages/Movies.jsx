@@ -14,15 +14,14 @@ export default function Movies() {
   return (
     <div>
       <Navbar />
-    <div className='movies-container'>
-      {movies && movies.map((movie) => (
-        <Link to={`/movies/${movie.id}`} className='movie-card' key={movie.id}>
-          <p className='movie-title-pl'>"{movie.titlePl}"</p>
-          <span className='movie-title-eng'>{movie.titleEng}</span>
-          {/* <img src={movie.cover} alt={movie.titlePl} /> */}
-        </Link>
-      ))}
-    </div>
-    </div>
+      <div className='movies-container'>
+        {movies && movies.map((movie) => (
+          <Link to={`/movies/${movie.id}`} className='movie-card' key={movie.id}>
+            <img src={movie.wallpaper} alt={movie.titlePl} />
+            <span className='movie-title-pl'>{movie.titlePl}</span>
+            <span className='movie-title-eng'>{movie.titleEng}</span>
+          </Link> ))}
+      </div>
+      </div>
   )
 }

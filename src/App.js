@@ -17,6 +17,7 @@ import Navbar from './components/Navbar';
 
 // authentication
 import { useAuthContext } from './hooks/useAuthContext'
+import AddMovie from './pages/AddMovie';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
             <Route path='/movies/:id' element={user ? <Movie /> : <Navigate to='/login' />} />
             <Route path='/signup' element={user ? <Navigate to='/' /> : <Signup />} />
             <Route path='/login' element={user ? <Navigate to='/' /> : <Login />} />
+            <Route path='/add_movie' element={user ? <AddMovie /> : <Login />} />
             <Route path='/*' element={<NotFound />} />
           </Routes>
         </BrowserRouter>

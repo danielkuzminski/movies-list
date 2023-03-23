@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap'); */
 
 
 .navbar {
   width: 100%;
   background: transparent;
-  padding: 10px 0 0 0px;
+  padding: 10px;
   box-sizing: border-box;
+  box-shadow: 0 0 25px #ccc;
 }
 
 .navbar ul {
@@ -19,20 +20,39 @@
   list-style-type: none;
 }
 
-.title {
-  margin-right: auto;
-  font-family: 'Sigmar One', cursive;
-  letter-spacing: 10px;
-  font-size: 1.5rem;
+.to-left {
+  margin-right: 300px;
+  /* font-family: 'Sigmar One', cursive; */
+  letter-spacing: 1px;
+  /* font-size: 1.2rem; */
 }
 
 .navbar .nav-action {
   margin: 0 16px 0 10px;
-  font-weight: 700;
+  /* font-weight: 700; */
+}
+
+.nav-action {
+  color: #111;
 }
 
 .clickable {
+  letter-spacing: 1px;
   cursor: pointer;
+}
+
+.logout {
+  border: 1px solid #f00;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #f00;
+  transition: all .3s;
+}
+
+.logout:hover {
+  background-color: #f00;
+  color: #fff;
 }
 
 .navbar a {

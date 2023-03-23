@@ -40,6 +40,7 @@ export default function Movie() {
             <span>{movie.titleEng} /</span>
             <span>{movie.year} /</span>
             <span>{movie.genre} /</span>
+            {/* <img src={movie.wallpaper} alt="" /> */}
           </div>
           {/* <iframe 
             className='iframe-box'
