@@ -30,14 +30,10 @@ export default function Navbar() {
 
   return (
     <nav className='navbar'>
-      <ul>
+
         <span className='to-left'>Witaj, {user.displayName}. Co dzisiaj robimy?</span>
         {user && (
           <div>
-            <li className='nav-action clickable'>Szukamy</li>
-            <li className='nav-action clickable'><NavLink className='link-color' to='/add_movie'>Dodajemy</NavLink></li>
-            <li className='nav-action clickable'><NavLink className='link-color' to='/'>Filmy</NavLink></li>
-            <li className='clickable logout' onClick={logout} >wyloguj</li>
             <div className='hamburger' onClick={showElement}>
               <span className='hamburger-bar'></span>
               <span className='hamburger-bar'></span>
@@ -52,7 +48,7 @@ export default function Navbar() {
               <li className='nav-action'><Link to='/signup'>zarejestruj</Link></li>
             </>
           )}
-      </ul>
+
     </nav>
   )
 }

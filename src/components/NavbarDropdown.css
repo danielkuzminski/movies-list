@@ -21,6 +21,16 @@
     background-color: #fff;
     font-size: 64px;
     color: #f00;
+    transition: all .5s ease;
+}
+
+.dropdown-container button:hover {
+    cursor: pointer;
+}
+
+.dropdown-container button:active {
+    border: none;
+    outline: none;
 }
 
 .dropdown-container a {

@@ -6,6 +6,8 @@ import './Movies.css'
 
 // router
 import { Link } from 'react-router-dom'
+
+//components
 import Navbar from '../components/Navbar'
 
 export default function Movies() {
