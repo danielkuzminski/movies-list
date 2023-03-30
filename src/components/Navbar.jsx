@@ -31,9 +31,9 @@ export default function Navbar() {
   return (
     <nav className='navbar'>
 
-        <span className='to-left'>Witaj, {user.displayName}. Co dzisiaj robimy?</span>
+        <span className='to-left'>Witaj {user.displayName}. Co dzisiaj robimy?</span>
         {user && (
-          <div>
+          <div className='to-right'>
             <div className='hamburger' onClick={showElement}>
               <span className='hamburger-bar'></span>
               <span className='hamburger-bar'></span>
