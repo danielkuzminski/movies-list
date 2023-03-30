@@ -16,7 +16,7 @@
 .hamburger {
 	width: 40px;
 	height: 40px;
-	background: #fff;
+	background: transparent;
 	/* border-radius: 5px; */
 	display: flex;
 	align-items: center;
@@ -57,17 +57,20 @@
 		max-width: 960px;
 		align-items: center;
 		justify-content: space-between;
+		position: relative;
 	}
 
 	.to-left {
-		margin-right: 100px;
+		/* margin-right: 100px; */
+		position: absolute;
+		left: 160px;
 		letter-spacing: 1px;
 	}
 
 	.hamburger {
-		position: relative;
+		position: absolute;
 		top: 10px;
-		right: 0;
+		right: 160px;
 		margin-left: 900px;
 	}
 }

@@ -5,8 +5,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
-  /* background-color: #dfe9f2; */
   background-color: #fff;
+  /* background: linear-gradient(to right, #fff, #127bcb); */
   overflow-y: overlay;
 }
 
