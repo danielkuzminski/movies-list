@@ -4,11 +4,7 @@ import { useState } from 'react'
 //styles
 import './Navbar.css'
 
-//router
-import { NavLink, Link } from 'react-router-dom'
-
 //hooks
-import { useLogout } from '../hooks/useLogout'
 import { useAuthContext } from '../hooks/useAuthContext'
 
 //components
@@ -16,8 +12,6 @@ import NavbarDropdown from './NavbarDropdown'
 
 
 export default function Navbar() {
-
-  const {logout} = useLogout()
 
   const {user} = useAuthContext()
 
@@ -42,13 +36,6 @@ export default function Navbar() {
             {show && <NavbarDropdown showElement={showElement} />}
           </div>
           )}
-          {!user && (
-            <>
-              <li className='nav-action'><Link to='/login'>zaloguj</Link></li>
-              <li className='nav-action'><Link to='/signup'>zarejestruj</Link></li>
-            </>
-          )}
-
     </nav>
   )
 }

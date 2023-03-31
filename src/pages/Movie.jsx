@@ -1,50 +1,45 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react"
 
 // styles
-import './Movie.css'
+import "./Movie.css"
 
 // router
-import { useParams } from 'react-router-dom'
+import { useParams } from "react-router-dom"
 
 // firebase
-import { doc, getDoc } from 'firebase/firestore'
-import { db } from '../firebase/config'
-import Navbar from '../components/Navbar'
-
+import { doc, getDoc } from "firebase/firestore"
+import { db } from "../firebase/config"
+import Navbar from "../components/Navbar"
 
 export default function Movie() {
-  const {id} = useParams()
+	const { id } = useParams()
 
-  const [movie, setMovie] = useState(null)
+	const [movie, setMovie] = useState(null)
 
-  useEffect(() => {
-    let ref = doc(db, 'movies', id)
+	useEffect(() => {
+		let ref = doc(db, "movies", id)
 
-    getDoc(ref)
-    .then((snapshot) => {
-      setMovie(snapshot.data())
-    })
+		getDoc(ref).then((snapshot) => {
+			setMovie(snapshot.data())
+		})
+	}, [id])
 
-  }, [id])
-
-
-  return (
-    <div>
-    { movie && (
-      <div>
-        <Navbar />
-        <div className='movie-display-box'>
-          <p className='movie-display-box-title'>"{movie.titlePl}"</p>
-          <img src={movie.cover} alt={movie.titleEng} />
-          <div className='description-box'>
-            <span>{movie.titleEng} /</span>
-            <span>{movie.year} /</span>
-            <span>{movie.genre} /</span>
-            {/* <img src={movie.wallpaper} alt="" /> */}
-          </div>
-        </div>  
-      </div>
-    )}
-    </div>
-  )
+	return (
+		<div>
+			{movie && (
+				<div>
+					<Navbar />
+					<div className='movie-display-box'>
+						<img src={movie.cover} alt={movie.titleEng} />
+						<div className='titles'>
+							<span className='title-pl'>{movie.titlePl}</span>
+							<span className='title-en'>{movie.titleEng}</span>
+              <span className="year">{movie.year}</span>
+						</div>
+            <a className="trailer" href={movie.iframe} target="_blank" rel="noreferrer">trailer</a>
+					</div>
+				</div>
+			)}
+		</div>
+	)
 }
