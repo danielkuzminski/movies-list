@@ -50,11 +50,10 @@ export default function Login() {
           value={password}
           required
           />
-          {/* <span>Hasło</span> */}
       </label>
       {!isPending && <button className='btn-submit'>Wyślij</button>}
       {isPending && <button className='btn-submit' disabled >Wysyłam</button>}
-      <Link className='signup-link' to='/signup'><ion-icon name="arrow-forward-outline"></ion-icon>Zarejestruj się</Link>
+      <Link className='signup-link' to='/signup' disabled>Zarejestruj się</Link>
     </form>
     </section>
   )

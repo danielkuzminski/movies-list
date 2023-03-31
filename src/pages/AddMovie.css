@@ -1,5 +1,5 @@
 .add-movie-form {
-    width: 380px;
+    width: 340px;
     margin: 0 10px;
     display: flex;
     flex-direction: column;
@@ -8,12 +8,28 @@
 }
 
 .add-movie-form h1 {
+    display: inline-block;
     text-transform: uppercase;
     text-align: center;
     color: #111;
     font-weight: 400;
     margin-top: 40px;
+    position: relative;
+    color: #000;
+    /* text-shadow: 1px 1px 1px #fff; */
 }
+
+/* .add-movie-form h1:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fc53a8;
+    z-index: -1;
+    transform: skewY(3deg);
+} */
 
 .add-movie-form label {
     width: 100%;
@@ -27,7 +43,7 @@
 }
 
 .add-movie-form label input {
-    width: 360px;
+    width: 320px;
     appearance: none;
     padding: 12px;
     border-radius: 5px;
@@ -65,8 +81,8 @@
     padding: 8px;
     margin-top: 20px;
     cursor: pointer;
-    border: 2px solid #0f0;
-    background-color: #0f0;
+    border: 2px solid #3c00ff;
+    background-color: #3c00ff;
     text-transform: uppercase;
     color: #fff;
     outline: none;
@@ -86,12 +102,12 @@
     
 	.btn-add {
 		background-color: transparent;
-		color: #0f0;
+		color: #3c00ff;
 	}
     
 	.btn-add:active,
 	.btn-add:hover {
-        background-color: #0f0;
+        background-color: #3c00ff;
 		color: #fff;
 		outline: none;
 	} 

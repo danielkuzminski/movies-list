@@ -1,83 +1,106 @@
 .form-box {
-    min-height: 100vh;
-    width: 100%;
-    background-image: url('../assets/mainlog.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+	width: 360px;
+	color: #000;
 }
 
 .signup-form {
-    position: relative;
-    top: 200px;
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 450px;
-    width: 400px;
-    position: relative;
-    margin: 0 auto;
-    backdrop-filter: blur(5px);
-    border-radius: 30px;
-    border: 2px solid #fff;
+	position: relative;
+	top: 50px;
+	background: transparent;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 450px;
+	width: 340px;
+	position: relative;
+	margin: 0 10px;
 }
 
 .signup-form h2 {
-    font-size: 2em;
-    text-transform: uppercase;
-    color: #fff;
+	font-size: 2em;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #fff;
+	position: relative;
+}
+
+.signup-form h2:before {
+	content: "";
+	width: 110%;
+	height: 105%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: hotpink;
+	transform: rotate(-3deg);
+	/* transform: translate(-50%, -50%); */
+	z-index: -1;
 }
 
 .signup-form label {
-    position: relative;
-    margin: 30px 0;
-    width: 300px;
-    border-bottom: 2px solid #fff;
+	position: relative;
+	margin: 30px 0;
+	width: 300px;
+	border-bottom: 2px solid #000;
 }
 
 .signup-input {
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    padding: 0 35px 0 5px;
-    color: #fff;
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 1em;
+	padding: 0 35px 0 5px;
+	color: #000;
 }
 
 .signup-form label ion-icon {
-    position: absolute;
-    right: 10px;
-    color: #fff;
-    font-size: 1.2em;
-    top: 18px;
+	position: absolute;
+	right: 10px;
+	color: #000;
+	font-size: 1.2em;
+	top: 18px;
 }
 
 .btn-submit {
-    width: 75%;
-    height: 40px;
-    border-radius: 40px;
-    border: none;
-    outline: none;
-    background-color: #fff;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: 500;
-    margin-bottom: 30px;
+	width: 75%;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	background-color: rgb(121, 121, 237);
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: 500;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 30px;
 }
 
 .extend {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .signup-link {
-    color: #fff;
-    font-weight: 500;
+	color: #000;
+	font-weight: 500;
+	text-decoration: underline;
 }
 
 .signup-link ion-icon {
-    font-size: 1em;
+	font-size: 1em;
+}
+
+@media screen and (min-width: 400px) {
+	.form-box {
+		width: 100%;
+	}
+
+	.signup-form {
+		top: 100px;
+		width: 400px;
+		margin: 0 auto;
+	}
 }

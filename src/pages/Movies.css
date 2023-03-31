@@ -1,17 +1,17 @@
 .movies-container {
-	width: 390px;
+	width: 360px;
 	margin: 30px auto;
 	display: grid;
 	grid-template-columns: 1fr;
-	row-gap: 50px;
+	row-gap: 25px;
 	align-items: center;
 }
 
 .movie-card {
-	width: 380px;
+	width: 340px;
 	min-height: 300px;
-	margin: 5px 5px;
-	background: linear-gradient(#000, #737272);
+	margin: 0px 10px;
+	background: linear-gradient(#000, #666565);
 	border-radius: 5px;
 	color: #fafafa;
 	transition: all 0.3s ease;

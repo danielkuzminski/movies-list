@@ -35,19 +35,13 @@ export default function Movie() {
         <Navbar />
         <div className='movie-display-box'>
           <p className='movie-display-box-title'>"{movie.titlePl}"</p>
-          {/* <img src={movie.cover} alt={movie.titleEng} /> */}
+          <img src={movie.cover} alt={movie.titleEng} />
           <div className='description-box'>
             <span>{movie.titleEng} /</span>
             <span>{movie.year} /</span>
             <span>{movie.genre} /</span>
             {/* <img src={movie.wallpaper} alt="" /> */}
           </div>
-          {/* <iframe 
-            className='iframe-box'
-            src={movie.iframe}
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen
-            ></iframe> */}
         </div>  
       </div>
     )}

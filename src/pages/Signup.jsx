@@ -71,9 +71,9 @@ export default function Signup() {
           required
         />
       </label>
-      {!isPending && <button className='btn-submit'>Wyślij</button>}
+      {!isPending && <button className='btn-submit' disabled>Wyślij</button>}
       {isPending && <button className='btn-submit' disabled >Wysyłam</button>}
-      <Link to='/login' className='signup-link extend'><ion-icon name="arrow-forward-outline"></ion-icon>Wpisz się</Link>
+      <Link to='/login' className='signup-link extend'>Wpisz się</Link>
     </form>
     </section>
   )
