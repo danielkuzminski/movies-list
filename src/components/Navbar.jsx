@@ -24,8 +24,19 @@ export default function Navbar() {
 
   return (
     <nav className='navbar'>
-
         <span className='to-left'>Witaj {user.displayName}. Co dzisiaj robimy?</span>
+        <div className='hamburger' onClick={showElement}>
+              <span className='hamburger-bar'></span>
+              <span className='hamburger-bar'></span>
+              <span className='hamburger-bar'></span>
+        </div>
+        {show && <NavbarDropdown showElement={showElement} />}
+    </nav>
+  )
+}
+
+
+{/* <span className='to-left'>Witaj {user.displayName}. Co dzisiaj robimy?</span>
         {user && (
           <div className='to-right'>
             <div className='hamburger' onClick={showElement}>
@@ -35,7 +46,4 @@ export default function Navbar() {
             </div>
             {show && <NavbarDropdown showElement={showElement} />}
           </div>
-          )}
-    </nav>
-  )
-}
+          )} */}

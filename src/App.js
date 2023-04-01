@@ -18,6 +18,7 @@ import Navbar from './components/Navbar';
 // authentication
 import { useAuthContext } from './hooks/useAuthContext'
 import AddMovie from './pages/AddMovie';
+import ScrollBar from './components/ScrollBar';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
     <div className="App">
       { authIsReady && (
         <BrowserRouter>
+          <ScrollBar />
           {/* <Navbar /> */}
           <Routes>
             <Route path='/' element={user ? <Home /> : <Navigate to='/login' />} />

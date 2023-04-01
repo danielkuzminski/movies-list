@@ -46,20 +46,20 @@
 
 @media only screen and (min-width: 400px) {
 	.movies-container {
-		width: 960px;
-		margin: 30px auto;
+		width: 90vw;
+		margin: 30px 20px;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 20px 10px;
 	}
 
 	.movie-card {
-		width: 300px;
+		width: 30vw;
 		min-height: 280px;
 		box-shadow: 0 0 10px #333;
 	}
 
 	.movie-card img {
-		width: 300px;
+		width: 30vw;
 		filter: opacity(0.85);
 	}
 
