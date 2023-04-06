@@ -34,16 +34,3 @@ export default function Navbar() {
     </nav>
   )
 }
-
-
-{/* <span className='to-left'>Witaj {user.displayName}. Co dzisiaj robimy?</span>
-        {user && (
-          <div className='to-right'>
-            <div className='hamburger' onClick={showElement}>
-              <span className='hamburger-bar'></span>
-              <span className='hamburger-bar'></span>
-              <span className='hamburger-bar'></span>
-            </div>
-            {show && <NavbarDropdown showElement={showElement} />}
-          </div>
-          )} */}

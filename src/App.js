@@ -13,7 +13,7 @@ import Login from './pages/Login'
 import NotFound from './pages/NotFound'
 
 //components
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 
 // authentication
 import { useAuthContext } from './hooks/useAuthContext'

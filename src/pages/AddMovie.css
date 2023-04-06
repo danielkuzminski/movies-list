@@ -1,22 +1,22 @@
 .add-movie-form {
-    width: 340px;
-    margin: 0 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	width: 340px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .add-movie-form h1 {
-    display: inline-block;
-    text-transform: uppercase;
-    text-align: center;
-    color: #111;
-    font-weight: 400;
-    margin-top: 40px;
-    position: relative;
-    color: #000;
-    /* text-shadow: 1px 1px 1px #fff; */
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	color: #111;
+	font-weight: 400;
+	margin-top: 40px;
+	position: relative;
+	color: #000;
+	/* text-shadow: 1px 1px 1px #fff; */
 }
 
 /* .add-movie-form h1:before {
@@ -32,65 +32,65 @@
 } */
 
 .add-movie-form label {
-    width: 100%;
-    position: relative;
-    padding-top: 20px;
-    margin-bottom: 5px;
-    font-size: 14px;
+	width: 100%;
+	position: relative;
+	padding-top: 20px;
+	margin-bottom: 5px;
+	font-size: 14px;
 
-    /* adding disply flex to center all inputs to h1 and button */
-    display: flex;
+	/* adding disply flex to center all inputs to h1 and button */
+	display: flex;
 }
 
 .add-movie-form label input {
-    width: 320px;
-    appearance: none;
-    padding: 12px;
-    border-radius: 5px;
-    outline: none;
-    background: none;
-    border: 2px solid #aaa;
+	width: 320px;
+	appearance: none;
+	padding: 12px;
+	border-radius: 5px;
+	outline: none;
+	background: none;
+	border: 2px solid #aaa;
 }
 
 .add-movie-form label span {
-    position: absolute;
-    left: 14px;
-    top: 50%;
-    color: #aaa;
-    cursor: text;
-    transform: translateY(-50% + 6px);
-    transition: all 0.3s ease;
+	position: absolute;
+	left: 14px;
+	top: 50%;
+	color: #aaa;
+	cursor: text;
+	transform: translateY(-50% + 6px);
+	transition: all 0.3s ease;
 }
 
 .add-movie-form label input:focus,
 .add-movie-form label input:valid {
-    border-color: #000;
+	border-color: #000;
 }
 
 .add-movie-form label input:focus + span,
 .add-movie-form label input:valid + span {
-    color: #222;
-    top: 12px;
-    font-size: 10px;
-    background: #fff;
-    padding: 2px;
+	color: #222;
+	top: 12px;
+	font-size: 10px;
+	background: #fff;
+	padding: 2px;
 }
 
 .btn-add {
-    width: 100%;
-    padding: 8px;
-    margin-top: 20px;
-    cursor: pointer;
-    border: 2px solid #3c00ff;
-    background-color: #3c00ff;
-    text-transform: uppercase;
-    color: #fff;
-    outline: none;
-    font-size: 20px;
+	width: 100%;
+	padding: 8px;
+	margin-top: 20px;
+	cursor: pointer;
+	border: 2px solid #3c00ff;
+	background-color: #3c00ff;
+	text-transform: uppercase;
+	color: #fff;
+	outline: none;
+	font-size: 20px;
+    border-radius: 3px;
 }
 
-
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 401px) {
 	.add-movie-form {
 		width: 450px;
 		margin: 0 auto;
@@ -99,16 +99,16 @@
 	.add-movie-form label input {
 		width: 100%;
 	}
-    
+
 	.btn-add {
 		background-color: transparent;
 		color: #3c00ff;
 	}
-    
+
 	.btn-add:active,
 	.btn-add:hover {
-        background-color: #3c00ff;
+		background-color: #3c00ff;
 		color: #fff;
 		outline: none;
-	} 
+	}
 }
