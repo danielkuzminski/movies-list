@@ -11,6 +11,7 @@ import Movie from './pages/Movie'
 import Signup from './pages/Signup'
 import Login from './pages/Login'
 import NotFound from './pages/NotFound'
+import Search from './pages/Search'
 
 //components
 // import Navbar from './components/Navbar';
@@ -38,6 +39,7 @@ function App() {
             <Route path='/signup' element={user ? <Navigate to='/' /> : <Signup />} />
             <Route path='/login' element={user ? <Navigate to='/' /> : <Login />} />
             <Route path='/add_movie' element={user ? <AddMovie /> : <Login />} />
+            <Route path='/search' element={user ? <Search /> : <Login />} />
             <Route path='/*' element={<NotFound />} />
           </Routes>
         </BrowserRouter>

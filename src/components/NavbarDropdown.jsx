@@ -17,7 +17,7 @@ export default function NavbarDropdown({showElement}) {
   return (
     <div className='dropdown-container'>
         <button onClick={showElement}>&times;</button>
-        <NavLink to='#' onClick={showElement}>Szukamy</NavLink>
+        <NavLink to='/search' onClick={showElement}>Szukamy</NavLink>
         <span>a może...</span>
         <NavLink to='/add_movie' onClick={showElement}>Dodajemy</NavLink>
         <span>lub przeglądamy nasze...</span>
