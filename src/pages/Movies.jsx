@@ -21,7 +21,7 @@ export default function Movies() {
           <Link to={`/movies/${movie.id}`} className='movie-card' key={movie.id}>
             <img src={movie.wallpaper} alt={movie.titlePl} />
             <span className='movie-title-pl'>{movie.titlePl}</span>
-            <span className='movie-title-eng'>{movie.titleEng}</span>
+            <span className='movie-title-eng'>{movie.titleEng} ({movie.year})</span>
           </Link> ))}
       </div>
       </div>

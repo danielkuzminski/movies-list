@@ -3,7 +3,7 @@
 }
 
 .search-container {
-    width: 400px;
+    width: 360px;
 }
 
 .search-display {
@@ -17,7 +17,7 @@
 
 .search-title {
     text-transform: uppercase;
-    text-shadow: 1px 1px 0 red;
+    /* text-shadow: 1px 1px 0 #f80; */
 }
 
 .search-input {
@@ -26,12 +26,12 @@
     font-size: 1.2rem;
     border-radius: 3px;
     outline: none;
-    border: 1px solid hotpink;
-    margin-bottom: 10px;
+    border: 1px solid #f80;
+    margin-bottom: 30px;
 }
 
 .search-input:focus {
-    border: 2px solid hotpink;
+    border: 2px solid #f80;
 }
 
 .output-display {
@@ -46,13 +46,14 @@
 }
 
 .title-display {
-    background: #ddcbcb;
+    background: #f80;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 20px;
-    margin-top: 10px;
+    font-weight: 700;
+    margin-top: 0px;
     text-transform: uppercase;
-    color: #2c2222;
+    color: #fff;
 }
 
 @media screen and (min-width: 401px) {

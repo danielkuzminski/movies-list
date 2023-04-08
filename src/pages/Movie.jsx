@@ -30,13 +30,22 @@ export default function Movie() {
 				<div>
 					<Navbar />
 					<div className='movie-display-box'>
-						<img src={movie.cover} alt={movie.titleEng} />
-						<div className='titles'>
+						<div className='movie-card-full'>
 							<span className='title-pl'>{movie.titlePl}</span>
+							<a
+								className='trailer'
+								href={movie.iframe}
+								target='_blank'
+								rel='noreferrer'>
+								<img
+									className='movie-cover'
+									src={movie.cover}
+									alt={movie.titleEng}
+								/>
+							</a>
 							<span className='title-en'>{movie.titleEng}</span>
-              <span className="year">{movie.year}</span>
+							<span className='year'>{movie.year}</span>
 						</div>
-            <a className="trailer" href={movie.iframe} target="_blank" rel="noreferrer">trailer</a>
 					</div>
 				</div>
 			)}

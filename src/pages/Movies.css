@@ -1,6 +1,7 @@
 .movies-container {
-	width: 360px;
+	max-width: 400px;
 	margin: 30px auto;
+	/* margin: 30px 10px 10px 10px; */
 	display: grid;
 	grid-template-columns: 1fr;
 	row-gap: 25px;
@@ -8,13 +9,14 @@
 }
 
 .movie-card {
-	width: 340px;
+	max-width: 380px;
 	min-height: 300px;
 	margin: 0px 10px;
-	background: linear-gradient(#000, #777676);
+	background: linear-gradient(#fff, rgb(99, 153, 247));
 	border-radius: 5px;
 	color: #fafafa;
 	transition: all 0.3s ease;
+	position: relative;
 }
 
 .movie-card img {
@@ -27,7 +29,9 @@
 }
 
 .movie-title-pl {
-	position: relative;
+	position: absolute;
+	top: 160px;
+	left: 10px;
 	display: block;
 	text-align: center;
 	font-size: 1.1rem;
@@ -35,31 +39,63 @@
 	text-transform: uppercase;
 	font-weight: 700;
 	padding-top: 10px;
+	color: #fff;
+	text-shadow: 1px 1px 5px #000;
 }
 
 .movie-title-eng {
 	display: block;
-	text-align: center;
-	color: #ccc;
+	text-align: left;
+	margin-left: 10px;
+	color: #fff;
 	text-transform: uppercase;
 }
 
-@media only screen and (min-width: 401px) {
+
+@media screen and (min-width: 401px) {
 	.movies-container {
-		width: 90vw;
-		margin: 30px 20px;
+		min-width: 90vw;
+		margin: 30px 10px 10px 10px;
+		/* margin-top: 30px; */
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px 10px;
+	}
+	
+	.movie-card {
+		min-width: 44vw;
+		min-height: 280px;
+		box-shadow: 0 0 10px #333;
+	}
+	
+	.movie-card img {
+		min-width: 44vw;
+		filter: opacity(0.85);
+	}
+
+	.movie-card:hover {
+		box-shadow: none;
+		color: #fff;
+	}
+	.movie-card:hover img {
+		filter: opacity(1);
+	}
+}
+@media only screen and (min-width: 800px) {
+	.movies-container {
+		min-width: 90vw;
+		margin: 30px;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 20px 10px;
 	}
 
 	.movie-card {
-		width: 30vw;
+		min-width: 30vw;
 		min-height: 280px;
 		box-shadow: 0 0 10px #333;
 	}
 
 	.movie-card img {
-		width: 30vw;
+		min-width: 30vw;
 		filter: opacity(0.85);
 	}
 
@@ -68,7 +104,22 @@
 		color: #fff;
 	}
 
-	.movie-card:hover img {
-		filter: opacity(1);
-	}
 }
+/* @media only screen and (max-width: 800px){
+	.movies-container {
+		width: 100%;
+		margin: 30px 10px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	.movie-card {
+		width: 90%;
+		min-height: 280px;
+		box-shadow: 0 0 10px #333;
+	}
+	
+	.movie-card img {
+		width: 100%;
+		filter: opacity(0.85);
+	}
+} */

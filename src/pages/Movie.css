@@ -1,6 +1,5 @@
 .movie-display-box {
   width: 360px;
-  min-height: 600px;
   margin: 30px auto;
   display: flex;
   flex-direction: column;
@@ -10,46 +9,42 @@
   position: relative;
 }
 
-.movie-display-box img {
-  width: 320px;
-  box-shadow: 0 0 10px #000;
-  margin: 0 auto;
-}
-
-.titles {
-  position: relative;
+.movie-card-full {
+  width: 360px;
 }
 
 .title-pl {
   display: block;
-  margin-top: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #777;
-  font-size: 2rem;
-  font-weight: 700;
   font-style: italic;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.title-en, .year {
-  text-align: left;
-  font-style: italic;
-  color: #aaa; 
+.trailer {
+  width: 300px;
+  display: block;
+  margin: 20px auto;
+}
+.movie-cover {
+  width: 100%;
+}
+
+.title-en {
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
 }
 
 .year {
-  display: block;
+  display: none;
 }
 
-.movie-display-box a {
-  margin-top: 20px;
-  width: 120px;
-  text-align: center;
-  font-weight: 900;
-  background: red;
-  color: #fff;
-  padding: 10px;
-  text-transform: uppercase;
-  border-radius: 10px;
+@media screen and (min-width: 401px) {
+  .movie-display-box {
+    width: 70vw;
+    margin: 30px auto;
+    display: flex;
+    border: 1px solid #000;
+  }
 }
-

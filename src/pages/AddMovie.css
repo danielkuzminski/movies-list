@@ -16,7 +16,7 @@
 	margin-top: 40px;
 	position: relative;
 	color: #000;
-	/* text-shadow: 1px 1px 1px #fff; */
+	/* text-shadow: 1px 1px 0px #f80; */
 }
 
 /* .add-movie-form h1:before {
@@ -81,8 +81,8 @@
 	padding: 8px;
 	margin-top: 20px;
 	cursor: pointer;
-	border: 2px solid #3c00ff;
-	background-color: #3c00ff;
+	border: 2px solid #6399f7;
+	background: #6399f7;
 	text-transform: uppercase;
 	color: #fff;
 	outline: none;

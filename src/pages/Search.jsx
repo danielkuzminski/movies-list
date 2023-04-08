@@ -48,9 +48,6 @@ export default function Search() {
 						movies &&
 						filteredMovies.map((movie) => (
 							<div className='output-display' key={movie.id}>
-								{/* <p className='title-display'>
-								<Link to={`/movies/${movie.id}`}>{movie.titlePl.toLowerCase()}</Link>
-							</p> */}
 								<Link className='search-link' to={`/movies/${movie.id}`}>
 									<p className='title-display'>{movie.titlePl.toLowerCase()}</p>
 								</Link>
