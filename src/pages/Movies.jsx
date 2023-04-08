@@ -22,6 +22,7 @@ export default function Movies() {
             <img src={movie.wallpaper} alt={movie.titlePl} />
             <span className='movie-title-pl'>{movie.titlePl}</span>
             <span className='movie-title-eng'>{movie.titleEng} ({movie.year})</span>
+            <p className='movie-genre'>{movie.genre}</p>
           </Link> ))}
       </div>
       </div>

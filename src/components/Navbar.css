@@ -11,6 +11,19 @@
 	left: 10px;
 	font-weight: 400;
 	font-size: 1.2em;
+	color: #fff;
+}
+
+.to-left:before {
+	content: '';
+	width: 110%;
+	height: 120%;
+	background: #6399f7;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotate(-1deg);
+	z-index: -1;
 }
 
 .hamburger {
@@ -64,6 +77,7 @@
 	}
 
 	.hamburger {
+		/* display: none; */
 		position: absolute;
 		top: 10px;
 		right: 20px;

@@ -12,7 +12,7 @@
 	max-width: 380px;
 	min-height: 300px;
 	margin: 0px 10px;
-	background: linear-gradient(#fff, rgb(99, 153, 247));
+	background: linear-gradient(#fff, #6399f7);
 	border-radius: 5px;
 	color: #fafafa;
 	transition: all 0.3s ease;
@@ -49,6 +49,14 @@
 	margin-left: 10px;
 	color: #fff;
 	text-transform: uppercase;
+}
+
+.movie-genre {
+	position: absolute;
+	right: 10px;
+	bottom: 0px;
+	font-style: italic;
+	/* text-transform: uppercase; */
 }
 
 

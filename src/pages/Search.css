@@ -26,12 +26,12 @@
     font-size: 1.2rem;
     border-radius: 3px;
     outline: none;
-    border: 1px solid #f80;
+    border: 1px solid #6399f7;
     margin-bottom: 30px;
 }
 
 .search-input:focus {
-    border: 2px solid #f80;
+    border: 2px solid #6399f7;
 }
 
 .output-display {
@@ -46,13 +46,14 @@
 }
 
 .title-display {
-    background: #f80;
+    background: #6399f7;
     padding: 15px;
     border-radius: 20px;
     font-size: 20px;
     font-weight: 700;
     margin-top: 0px;
     text-transform: uppercase;
+    text-align: center;
     color: #fff;
 }
 

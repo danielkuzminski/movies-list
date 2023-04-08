@@ -26,26 +26,29 @@ export default function Movie() {
 
 	return (
 		<div>
+			<Navbar />
 			{movie && (
-				<div>
-					<Navbar />
+				<div className="movie-container">
 					<div className='movie-display-box'>
-						<div className='movie-card-full'>
+						<div className="display-box-left">
 							<span className='title-pl'>{movie.titlePl}</span>
+							<span className='title-en'>{movie.titleEng} ({movie.year})</span>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui est minima aliquam sunt odit distinctio provident ab tempora explicabo dignissimos.</p>
 							<a
 								className='trailer'
 								href={movie.iframe}
 								target='_blank'
-								rel='noreferrer'>
-								<img
-									className='movie-cover'
-									src={movie.cover}
-									alt={movie.titleEng}
-								/>
-							</a>
-							<span className='title-en'>{movie.titleEng}</span>
-							<span className='year'>{movie.year}</span>
+								rel='noreferrer'>zobacz trailer</a>
 						</div>
+						<div className="display-box-right">
+							<img
+								className='movie-cover'
+								src={movie.cover}
+								alt={movie.titleEng}
+							/>
+
+						</div>
+							
 					</div>
 				</div>
 			)}
