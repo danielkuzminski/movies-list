@@ -9,13 +9,13 @@
 	position: absolute;
 	top: 15px;
 	left: 10px;
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 1.2em;
 	color: #fff;
 }
 
 .to-left:before {
-	content: '';
+	content: "";
 	width: 110%;
 	height: 120%;
 	background: #6399f7;
@@ -58,6 +58,10 @@
 	bottom: 10px;
 }
 
+.to-right {
+	display: none;
+}
+
 @media screen and (min-width: 400px) {
 	.navbar {
 		width: 100%;
@@ -77,9 +81,32 @@
 	}
 
 	.hamburger {
-		/* display: none; */
+		display: none;
 		/* position: absolute; */
 		top: 10px;
 		right: 10px;
+	}
+
+	.to-right {
+		display: flex;
+		position: absolute;
+		top: -5px;
+		right: 30px;
+		font-weight: 400;
+		font-size: 1.2em;
+	}
+
+	.to-right li {
+		list-style: none;
+		margin-left: 30px;
+	}
+
+	.to-right li a {
+		color: #6399f7;
+		padding: 5px;
+	}
+
+	.nav-logout {
+		color: red;
 	}
 }
