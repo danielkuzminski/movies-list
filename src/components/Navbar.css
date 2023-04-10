@@ -62,7 +62,7 @@
 	display: none;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 401px) {
 	.navbar {
 		width: 100%;
 		background: transparent;

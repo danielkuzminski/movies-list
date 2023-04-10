@@ -13,6 +13,8 @@ import Navbar from '../components/Navbar'
 export default function Movies() {
   const {data: movies} = useCollection('movies')
 
+  console.log(movies)
+
   return (
     <div>
       <Navbar />
