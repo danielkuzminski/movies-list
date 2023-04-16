@@ -62,7 +62,9 @@
 	display: none;
 }
 
-@media screen and (min-width: 401px) {
+
+
+@media screen and (min-width: 401px) and (max-width: 800px) {
 	.navbar {
 		width: 100%;
 		background: transparent;
@@ -80,6 +82,14 @@
 		letter-spacing: 1px;
 	}
 
+	
+
+	.nav-logout {
+		color: red;
+	}
+}
+
+@media screen and (min-width: 801px) {
 	.hamburger {
 		display: none;
 		/* position: absolute; */
@@ -104,9 +114,5 @@
 	.to-right li a {
 		color: #6399f7;
 		padding: 5px;
-	}
-
-	.nav-logout {
-		color: red;
 	}
 }
