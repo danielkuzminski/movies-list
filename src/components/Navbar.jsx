@@ -5,7 +5,7 @@ import { useState } from 'react'
 import './Navbar.css'
 
 //router
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 //hooks
 import { useAuthContext } from '../hooks/useAuthContext'
@@ -28,9 +28,10 @@ export default function Navbar() {
     setShow(!show)
   }
 
+
   return (
     <nav className='navbar'>
-        <span className='to-left'>Witaj {user.displayName}. Co dzisiaj robimy?</span>
+        <span className='to-left'><Link to='/'>Witaj {user.displayName}. Co dzisiaj robimy?</Link></span>
         <div className='hamburger' onClick={showElement}>
               <span className='hamburger-bar'></span>
               <span className='hamburger-bar'></span>
